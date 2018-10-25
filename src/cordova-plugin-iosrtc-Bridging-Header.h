@@ -5,4 +5,4 @@
 
 #import <Cordova/CDVPlugin.h>
 #import <WebRTC/WebRTC.h>
-#import "PEXDNS.h"
+//#import "PEXDNS.h"

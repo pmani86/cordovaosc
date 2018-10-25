@@ -17,7 +17,17 @@
 	<engines>
 		<engine name="cordova-ios" version=">=3.8.0" />
 	</engines>
-
+	<platform name="android">
+		<config-file target="AndroidManifest.xml" parent="/manifest">
+			<uses-feature android:name="android.hardware.camera" />
+			<uses-feature android:name="android.hardware.camera.autofocus" />	
+			<uses-permission android:name="android.permission.INTERNET" />
+			<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+			<uses-permission android:name="android.permission.RECORD_AUDIO" />
+			<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+			<uses-permission android:name="android.permission.CAMERA" />
+		</config-file>
+	</platform>
 	<platform name="ios">
 		<config-file target="config.xml" parent="/*">
 			<feature name="iosrtcPlugin">
